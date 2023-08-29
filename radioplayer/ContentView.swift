@@ -6,16 +6,50 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    
+    @State private var isPlaying = false
+    @State private var player = AVPlayer()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                List {
+                    
+                    HStack {
+                        Text("Radio 6")
+                        Spacer()
+                        Button(isPlaying ? "Stop" : "Start"){
+                            try? startStopRadio()
+                        }
+                    }
+                    
+                }
+            }
+            .navigationTitle("Radio Streamer")
         }
-        .padding()
+
+    }
+    
+    func startStopRadio() throws {
+                
+        let url = URL(string: "https://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_high/ak/bbc_6music.m3u8")
+        guard let unwrapped = url else {
+            return //some error
+        }
+        
+        let playerItem = AVPlayerItem(url: unwrapped)
+        
+        player = AVPlayer(playerItem: playerItem)
+        
+        if (isPlaying == true) {
+            player.pause()
+        } else {
+            player.play()
+        }
+        isPlaying.toggle()
     }
 }
 

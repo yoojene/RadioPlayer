@@ -19,6 +19,7 @@
 		44DE9D432A9A3B9500475B35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44DE9D452A9A3B9600475B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44DE9D482A9A3B9600475B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44DE9D4F2A9BA3EC00475B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		44DE9D402A9A3B9500475B35 /* radioplayer */ = {
 			isa = PBXGroup;
 			children = (
+				44DE9D4F2A9BA3EC00475B35 /* Info.plist */,
 				44DE9D412A9A3B9500475B35 /* radioplayerApp.swift */,
 				44DE9D432A9A3B9500475B35 /* ContentView.swift */,
 				44DE9D452A9A3B9600475B35 /* Assets.xcassets */,
@@ -267,9 +269,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"radioplayer/Preview Content\"";
-				DEVELOPMENT_TEAM = 3XF7K7C56U;
+				DEVELOPMENT_TEAM = JJ84LBY5FN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = radioplayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,9 +299,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"radioplayer/Preview Content\"";
-				DEVELOPMENT_TEAM = 3XF7K7C56U;
+				DEVELOPMENT_TEAM = JJ84LBY5FN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = radioplayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
